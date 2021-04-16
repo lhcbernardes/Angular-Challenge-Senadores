@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+  <span>Despesas dos senadores</span>
+</mat-toolbar>
+
+<mat-nav-list>
+  <a mat-list-item *ngFor="let senador of senadores" [routerLink]="['/senadores', senador.id]"> {{ senador.nomeSenador }} </a>
+</mat-nav-list>
